@@ -12,9 +12,10 @@ It's a simple JavaScript aplication that can help you make a to do list.
 - array
 - BEM
 - buttons
+- ES6
 
 ### Instruction:
 
 t's just a regular to-do list. First you have to enter the task you want to do, and then you have the option to mark your task as done or you can delete it.
 
-Link to the page: 
+Link to the page: https://mikolajozga.github.io/to-do-list/
