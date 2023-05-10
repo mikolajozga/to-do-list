@@ -6,6 +6,8 @@
 
 It's a simple JavaScript aplication that can help you make a to do list.
 
+Link to the page: https://mikolajozga.github.io/to-do-list/
+
 ### My project includes elements and features like:
 - JavaScript code
 - objects
@@ -18,4 +20,3 @@ It's a simple JavaScript aplication that can help you make a to do list.
 
 It's just a regular to-do list. First you have to enter the task you want to do, and then you have the option to mark your task as done or you can delete it.
 
-Link to the page: https://mikolajozga.github.io/to-do-list/
