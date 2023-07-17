@@ -1,5 +1,4 @@
 .form {
-    padding: 20px;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 10px;
@@ -26,5 +25,10 @@
 
 .form__button:hover {
     background-color: rgb(0, 85, 85);
+    cursor: pointer;
+}
+
+.form__button:active {
+    background-color: rgb(0, 56, 56);
     cursor: pointer;
 }
