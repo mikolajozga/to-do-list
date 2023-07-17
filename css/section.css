@@ -9,3 +9,7 @@
     border-bottom: 2px solid rgb(221, 221, 221);
     margin: 0;
 }
+
+.section__body {
+    padding: 20px;
+}
