@@ -11,3 +11,21 @@
     transition: color 0.5s;
 }
 
+@media (max-width: 767px) {
+    .section__button {
+        flex-basis: 100%;
+        margin: 10px;
+    }
+}
+
+.section__button:hover {
+    color: hsl(180, 100%, 35%);
+}
+
+.section__button:disabled {
+    color: grey;
+}
+    
+
+
+
