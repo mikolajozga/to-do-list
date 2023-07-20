@@ -27,7 +27,7 @@
     color: white;
     padding: 8px 10px;
     cursor: pointer;
-    transition: background 0.5s;
+    transition: 0.4s;
 }
 
 .removeTaskButton:hover {
@@ -42,7 +42,7 @@
     padding: 0px;
     cursor: pointer;
     color: white;
-    transition: background 0.5s;
+    transition:0.4s;
 }
 
 .checkTaskButton:hover {
