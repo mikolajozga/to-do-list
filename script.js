@@ -3,37 +3,45 @@
     let hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ];
 
         render();
     };
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
-                render();
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            ...task.slice(taskIndex + 1),
+        ];
+        render();
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            { ...tasks[taskIndex], done: !tasks[taskIndex].done},
+            ...tasks.slice(taskIndex + 1),
+        ];
         render();
     }
 
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
-        
+
         removeButtons.forEach((removeButton, index) => {
             removeButton.addEventListener("click", () => {
-               removeTask(index);
+                removeTask(index);
             });
         });
 
         const toggleDoneButtons = document.querySelectorAll(".js-done");
-        
+
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
-               toggleTaskDone(index);
+                toggleTaskDone(index);
             });
         });
     }
@@ -50,7 +58,7 @@
                         <button class="js-done checkTaskButton">
                         ${task.done ? "✔" : ""}
                         </button>
-                        <span class="task__content${ task.done ? " list__item--done" : ""}">
+                        <span class="task__content${task.done ? " list__item--done" : ""}">
                         ${task.content}
                         </span>
                         <button class="js-remove removeTaskButton"><i class="fa fa-trash"></i></button>
@@ -61,36 +69,36 @@
         document.querySelector(".js-tasks").innerHTML = htmlString;
     };
 
-    const renderButtons = () => {};
+    const renderButtons = () => { };
 
-    const bindButtonsevents = () => {};
-    
+    const bindButtonsevents = () => { };
+
 
     const render = () => {
-        
+
         renderTasks();
         renderButtons();
         bindEvents();
         bindButtonsevents();
     };
 
-    
+
     const onFormSubmit = (event) => {
         event.preventDefault();
 
         const newTask = document.querySelector(".js-newTask");
-        
+
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
 
-                newTask.focus();
-        
-        if(newTaskContent === "") {
+        newTask.focus();
+
+        if (newTaskContent === "") {
             return;
         }
 
         addNewTask(newTaskContent);
 
-                newTask.value = "";
+        newTask.value = "";
 
     };
 
