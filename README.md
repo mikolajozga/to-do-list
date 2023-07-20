@@ -2,7 +2,7 @@
 
 **What exactly is the To do list?**
 
-![to-do-list-animation](https://github.com/mikolajozga/to-do-list/assets/127400427/d274947c-001c-4fc5-ae47-78b6909c6d4e)
+![newtodolistanimation](https://github.com/mikolajozga/to-do-list/assets/127400427/6ee59ea9-bfa6-47a6-b507-a1a7a52a9bf4)
 
 It's a simple JavaScript aplication that can help you make a to do list.
 
