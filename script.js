@@ -34,6 +34,12 @@
         render();
     };
 
+    const toggleHideDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks;
+
+        render();
+    }
+
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -87,6 +93,7 @@
         bindEvents();
         bindButtonsevents();
         changeAllTasksDone();
+        toggleHideDoneTasks();
     };
 
 
