@@ -3,7 +3,7 @@
     flex-wrap: wrap;
 }
 
-.toggleHideDoneTasks {
+.section__button {
     background: transparent;
     color: teal;
     margin: 0 0 0 15px;
@@ -11,10 +11,3 @@
     transition: color 0.5s;
 }
 
-.changeAllDone {
-    background: transparent;
-    color: teal;
-    margin: 0 0 0 15px;
-    border: none;
-    transition: color 0.5s;
-}
