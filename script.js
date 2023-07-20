@@ -83,7 +83,19 @@
 
     const renderButtons = () => { };
 
-    const bindButtonsevents = () => { };
+    const bindButtonsevents = () => {
+        const toggleHideDoneTasksButton = document.querySelector(".js-toggleHideDoneTasks");
+
+        if(toggleHideDoneTasksButton) {
+            toggleHideDoneTasksButton.addEventListener("click", toggleHideDoneTasks);
+        }
+
+        const changeAllDoneButton = document.querySelector(".js-changeAllDone");
+
+        if(changeAllDoneButton) {
+            changeAllDoneButton.addEventListener("click", changeAllTasksDone);
+        }
+    };
 
 
     const render = () => {
@@ -92,8 +104,6 @@
         renderButtons();
         bindEvents();
         bindButtonsevents();
-        changeAllTasksDone();
-        toggleHideDoneTasks();
     };
 
 
