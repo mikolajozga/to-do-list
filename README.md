@@ -20,3 +20,7 @@ Link to the page: https://mikolajozga.github.io/to-do-list/
 
 It's just a regular to-do list. First you have to enter the task you want to do, and then you have the option to mark your task as done or you can delete it.
 
+NEW FEATURES: 
+- Now you can mark all tasks as done with "Ukończ wszystkie" button
+- Also you can hide all done tasks with "Ukryj ukończone" button.
+
