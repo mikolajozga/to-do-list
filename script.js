@@ -37,7 +37,7 @@
         });
     }
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
 
 
@@ -58,6 +58,15 @@
         }
 
         document.querySelector(".js-tasks").innerHTML = htmlString;
+    };
+
+    const renderButtons = () => {};
+    
+
+    const render = () => {
+        
+        renderTasks();
+        renderButtons();
 
         bindEvents();
     };
