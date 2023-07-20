@@ -12,6 +12,7 @@
     <link href="css/form.css" rel="stylesheet">
     <link href="css/section.css" rel="stylesheet">
     <link href="css/tasksList.css" rel="stylesheet">
+    <link href="css/buttons.css" rel="stylesheet">
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -39,11 +40,21 @@
             </div>
         </section>
 
-        <section class="section">  
-            <h2 class="section__header">Lista zadań</h2>
-           <div class="section__body">
-            <ul class="js-tasks section__list"></ul>
-           </div>
+        <section class="section">
+            <div class="section__header">
+                <h2 class="section__title">Lista zadań</h2>
+                <div class="buttons js-buttons">
+                    <button class="toggleHideDoneTasks js-toggleHideDoneTasks">
+                        Ukryj ukończone
+                    </button>
+                    <button class="changeAllDone js-changeAllDone">
+                        Ukończ wszystkie
+                    </button>
+                </div>
+            </div>
+            <div class="section__body">
+                <ul class="js-tasks section__list"></ul>
+            </div>
         </section>
 
     </div>
