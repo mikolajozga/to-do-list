@@ -14,7 +14,7 @@
     const removeTask = (taskIndex) => {
         tasks = [
             ...tasks.slice(0, taskIndex),
-            ...task.slice(taskIndex + 1),
+            ...tasks.slice(taskIndex + 1),
         ];
         render();
     };
@@ -65,7 +65,7 @@
         for (const task of tasks) {
             htmlString += `
                     <li
-                        class="list__item"
+                        class="list__item${task.done && hideDoneTasks ? " list__item--hidden" : ""}"
                     > 
                         <button class="js-done checkTaskButton">
                         ${task.done ? "✔" : ""}
