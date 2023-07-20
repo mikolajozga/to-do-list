@@ -61,14 +61,16 @@
     };
 
     const renderButtons = () => {};
+
+    const bindButtonsevents = () => {};
     
 
     const render = () => {
         
         renderTasks();
         renderButtons();
-
         bindEvents();
+        bindButtonsevents();
     };
 
     
