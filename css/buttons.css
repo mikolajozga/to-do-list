@@ -1,0 +1,20 @@
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toggleHideDoneTasks {
+    background: transparent;
+    color: teal;
+    margin: 0 0 0 15px;
+    border: none;
+    transition: color 0.5s;
+}
+
+.changeAllDone {
+    background: transparent;
+    color: teal;
+    margin: 0 0 0 15px;
+    border: none;
+    transition: color 0.5s;
+}

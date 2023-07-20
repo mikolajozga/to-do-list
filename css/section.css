@@ -4,8 +4,12 @@
     margin: 10px 0;
 }
 
-.section__title {
-    font-size: 20px;
+.section__header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
     border-bottom: 2px solid rgb(221, 221, 221);
     margin: 0;
