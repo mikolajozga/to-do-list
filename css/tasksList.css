@@ -13,6 +13,10 @@
     border-bottom: 2px solid rgb(221, 221, 221);
 }
 
+.list__item--hidden {
+    display: none;
+}
+
 .list__item--done {
     text-decoration: line-through;
 }
