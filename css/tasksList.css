@@ -23,10 +23,11 @@
     color: white;
     padding: 8px 10px;
     cursor: pointer;
+    transition: background 0.5s;
 }
 
 .removeTaskButton:hover {
-    background-color: rgb(116, 0, 0);
+    background: rgb(116, 0, 0);
 }
 
 .checkTaskButton {
@@ -37,8 +38,9 @@
     padding: 0px;
     cursor: pointer;
     color: white;
+    transition: background 0.5s;
 }
 
 .checkTaskButton:hover {
-    background-color: rgb(0, 90, 0);
+    background: rgb(0, 90, 0);
 }
