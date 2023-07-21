@@ -2,7 +2,7 @@
 
 **What exactly is the To do list?**
 
-![to-do-list-animation](https://github.com/mikolajozga/to-do-list/assets/127400427/d274947c-001c-4fc5-ae47-78b6909c6d4e)
+![newtodolistanimation](https://github.com/mikolajozga/to-do-list/assets/127400427/6ee59ea9-bfa6-47a6-b507-a1a7a52a9bf4)
 
 It's a simple JavaScript aplication that can help you make a to do list.
 
@@ -19,4 +19,8 @@ Link to the page: https://mikolajozga.github.io/to-do-list/
 ### Instruction:
 
 It's just a regular to-do list. First you have to enter the task you want to do, and then you have the option to mark your task as done or you can delete it.
+
+NEW FEATURES: 
+- Now you can mark all tasks as done with "Ukończ wszystkie" button
+- Also you can hide all done tasks with "Ukryj ukończone" button.
 
