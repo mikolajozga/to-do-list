@@ -17,11 +17,11 @@
     display: none;
 }
 
-.list__item--done {
+.list__content--done {
     text-decoration: line-through;
 }
 
-.removeTaskButton {
+.list__button--remove {
     background-color: red;
     border: none;
     color: white;
@@ -30,11 +30,11 @@
     transition: 0.4s;
 }
 
-.removeTaskButton:hover {
+.list__button--remove:hover {
     background: rgb(116, 0, 0);
 }
 
-.checkTaskButton {
+.list__button--checked {
     background-color: green;
     border: none;
     height: 32px;
@@ -45,6 +45,6 @@
     transition:0.4s;
 }
 
-.checkTaskButton:hover {
+.list__button--checked:hover {
     background: rgb(0, 90, 0);
 }

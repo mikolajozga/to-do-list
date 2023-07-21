@@ -67,13 +67,13 @@
                     <li
                         class="list__item${task.done && hideDoneTasks ? " list__item--hidden" : ""}"
                     > 
-                        <button class="js-done checkTaskButton">
+                        <button class="js-done list__button list__button--checked">
                             ${task.done ? "✔" : ""}
                         </button>
-                        <span class="task__content${task.done ? " list__item--done" : ""}">
+                        <span class="list__content${task.done ? " list__content--done" : ""}">
                             ${task.content}
                         </span>
-                        <button class="js-remove removeTaskButton"><i class="fa fa-trash"></i></button>
+                        <button class="js-remove list__button list__button--remove"><i class="fa fa-trash"></i></button>
                     </li>
                 `;
         }
